@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cricket</title>
+    <link rel="stylesheet" href="cricket.css">
+    
+</head>
+<body>
+    <H1>Bat Ball Stump</H1>
+    <button onclick="
+    const UserChoiseMsg='you have choise batting';
+   genrated();
+    const ComputerChoiseMsg= `the computer choise is ${ComputerChoise}`;
+    let ResultMsg;
+    if(ComputerChoise=='bat'){
+        ResultMsg='game tie';
+    }
+    else if(ComputerChoise=='ball'){
+        ResultMsg='Sairam Won the game';
+    }
+    else{
+        ResultMsg='Sairam out';
+    }
+    alert(`COMPUTER:${ComputerChoiseMsg}
+     SAIRAM:${UserChoiseMsg}
+     RESULT:${ResultMsg}`);
+    ">bat</button>
+    <button onclick="
+   UserChoiseMsg='you have choise Bowling';
+    genrated();
+    ComputerChoiseMsg= `the computer choise is ${ComputerChoise}`;
+    if(ComputerChoise=='bat'){
+        ResultMsg='Sairam out';
+    }
+    else if(ComputerChoise=='ball'){
+        ResultMsg='Game tie';
+    }
+    else{
+        ResultMsg='Sairam Won';
+    }
+    alert(` COMPUTER:${ComputerChoiseMsg}
+     SAIRAM:${UserChoiseMsg}
+     RESULT:${ResultMsg}`);
+    ">ball</button>
+    <button onclick="
+    UserChoiseMsg='you have choise stump';
+  genrated();
+      ComputerChoiseMsg= `the computer choise is ${ComputerChoise}`;
+      
+     if(ComputerChoise=='bat'){
+         ResultMsg='Sairam Out ';
+     }
+     else if(ComputerChoise=='ball'){
+         ResultMsg='Game Won';
+     }
+     else{
+         ResultMsg='Game tie';
+     }
+     alert(` COMPUTER:${ComputerChoiseMsg}
+      SAIRAM:${UserChoiseMsg}
+      RESULT:${ResultMsg}`);
+     ">Stump</button>
+     <script>
+       let ComputerChoise;
+       function genrated(){
+       const UserChoiseMsg='you have choise batting';
+    let RandomNumber=Math.random()*3;
+    
+    if(RandomNumber > 0 && RandomNumber <= 1 ){
+        ComputerChoise='bat';
+    }
+    else if(RandomNumber>1 &&RandomNumber <=2)
+    {
+ComputerChoise='ball';
+
+        }
+        else{
+            ComputerChoise='Stump'
+        }
+       }
+        </script>
+</body>
+</html>
